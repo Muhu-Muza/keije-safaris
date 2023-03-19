@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block sect %}
+	<section class="header">
+		{% endblock %}
+		
+	
+{% block head %}
+	<div class="text-box">
+		<h1>KEIJE SAFARIS</h1>
+		<p>
+			Do you seek an out-of-body Adventure that stems from deep within Your soul? <br>
+							An affair that only You, hold with Your inner being.
+	<br>We, as Keije Safaris turn Your Dream into reality, Visit us today to know all the special
+			              programs We have that are tailor made to suit You.
+			
+		</p>
+		<a href="{{ url_for('about') }}" class="hero-btn">Visit  Us To know More</a>
+		
+	</div>
+	{% endblock %}
+
+											<!---services--->
+{% block content %}
+<section class="services">
+
+	<h1>Our Services</h1>
+	<p>Hello and Welcome to Keije Safaris. <br>
+		We offer a broad range of Services from ranging from tour scheduling, tour guiding, educative studies,
+		and accomodation, to filmography and photography, Documentaries on Wild-life & history.
+		Boat cuises, bungee jumping and everything bundled with in.<br>
+		Choose <span>Keije Safaris </span>and <span>Witness your dream.</span>
+		</p>
+
+	   <div class="row">
+
+		       <div class="service-col">
+			   <h3>Tour Guiding</h3>
+               <p>
+			   Book a tour drive with us today and get a team of experienced drivers, tour guides, hosts, and 
+			   security personel to ensure that you have that dream vacation that you've been soul-seeking for.
+			   
+			   </p></div>
+
+			   <div class="service-col">
+				<h3>Accomodation</h3>
+				<p>
+				Do you enjoy busking in the sun? Have you always dreamed of a summer on the beach or a forest bon-fire? Camping?
+				Keije Safaris brings you an array of options that suit your taste best. An array of tropical dishes and the best hangouts.
+				 Book with us today to secure Your comfort.
+				</p></div>
+
+				<div class="service-col">
+			   <h3>Travel Packages</h3>
+               <p>
+			   Enjoy a thrilling experience coupled with a new learning curve and daily challenges for you to explore,
+			   Here at Keije Safaris we bring you experienced and flexible drivers and navigators to get you where you need to be.
+			   We have experienced sails men as well should you chose to explore the waters.Witness your dream.
+			   </p></div>
+
+	   </div>
+	</section> 
+												<!---Branches--->
+
+	<section class="branches">
+		<h1>Our Offices</h1>
+		<p>You can find us at any of our three branches at your convinience.</p>
+
+		<div class="row">
+
+			<div class="branch-col">
+				<a href="contact.html"><img src ="{{url_for('static', filename='images/pexels-david-bartus-586687.jpg')}}"></a>
+				<div class="layer">
+					<h3>KAMPALA</h3>
+				</div></div>
+
+			<div class="branch-col">
+				<a href="contact.html"><img src ="{{url_for('static', filename='images/denis-harsch-424073-unsplash.jpg')}}"></a>
+				<div class="layer">
+					<h3>TORORO</h3>
+				</div></div>
+
+			<div class="branch-col">
+				<a href="contact.html"><img src="{{url_for('static', filename='images/pexels-andy-vu-3283121.jpg')}}"></a>
+				<div class="layer">
+					<h3>MBARARA</h3>
+				</div></div>
+
+					
+			</div>
+
+
+		</div>
+	</section>
+
+	
+
+	<!---Testimonials--->
+	<section class="testimonials">
+		<h1>What our clients say</h1>
+		<p>Remarks from some of our esteemed customers.</p>
+		<div class="row">
+
+			<div class="testimonial-col">
+				<img src="{{url_for('static', filename='images/pic06.jpg')}}" alt="">
+				<div>
+					<p> wow, I couldn't be any happier with the service.
+						These guys poured out their whole hearts just to put a smile on my face.
+						Thank you and be sure to see me soon. </p>
+						 <h3>Orestine Akampa</h3>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+
+			</div>
+
+			<div class="testimonial-col">
+				<img src="{{url_for('static', filename='images/pic1.jpg')}}" alt="">
+				<div>
+					<p>Keije Safaris is the real deal guys. I have to be honest I had my doubts at first,
+						but these guys actually know what they are doing. Be sure to check them out if you're ever in Uganda</p>
+						 <h3>Laura Kayaga</h3>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star-half-o" aria-hidden="true"></i>
+				</div>
+
+			</div>
+
+			<div class="testimonial-col">
+				<img src="{{url_for('static', filename='images/pexels-manik-mandal-7367500.jpg')}}" alt="">
+				<div>
+					<p>Definitely got value for my cash, every single peny of cash was worth it.
+						Thanks for making my dream a reality. Can't wait to be back. </p>
+						 <h3>Bob Ntambi</h3>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+						 <i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<!---call to action--->
+	<section class="cta">
+		<h1>
+			Join a family of fun, pleasure, and  an endless learning curve with us here at Keije Safaris.
+		</h1>
+		<a href="{{ url_for('contact') }}" class="hero-btn">CONTACT US</a>
+	</section>
+{% endblock %}
+
+	

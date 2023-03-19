@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+        {% block sect %}
+	       <section class="sub-header2">
+		{% endblock %}
+		{% block head %}<h1>Be The First To Know!</h1>{% endblock %}
+
+{% block content %}	
+<!----blog page content-->
+<section class="blog-content">
+
+    <div class="row">
+
+        <div class="blog-left">
+                <img src="{{url_for('static', filename='images/gallery/1.jpg')}}">
+                <h2>Are You In Love With Tropical Cuisine?</h2>
+                <p>If you love the smell of roast meat, and fruit salad.<br>
+                    Then you are in for a treat, the best chefs have come up with yet another receipe to fill your taste buds.<br>
+                    Enjoy a tropical meal for less than <delete>$60</delete> today. 
+                    For only $40 you can get youself that sumptuous meal and better yet it  comes with one free drink and dessert.</p><br>
+
+                    <h2> A dip in the water maybe?</h2><p>
+                         It's now the dry season here in Uganda, So you may want to take a dip in the water every now and then
+                         .Enjoy the fesh waters and a boat cruise for only $75. <br>This offer runs for the next month hurry and get a feel of the
+                         tropical waters for they await you.
+                     </p><br><hr><hr>
+
+                     <p id="visit">
+                        Visit our page to catch up with more crazy discount offers and you could stand a chance of earning 
+                        yourself a fully fledged vacation from us.<br>See you soon! 
+                     </p><br><hr><hr>
+                     <div class="comment-box">
+                         <h3>leave a comment</h3>
+                         <form class="comment-form">
+                             <input type="text" placeholder="Enter Name">
+                             <input type="email" placeholder="Enter Email">
+                             <textarea  rows="5" placeholder="Your comment">
+                             </textarea>
+                             <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+                         </form>
+                     </div>
+
+
+        </div>
+        <div class="blog-right">
+            <h3>Fan Favourites score sheet</h3>
+            <div>
+                <span>Berbecue Bacon</span>
+                <span>35%</span>   
+            </div>
+            <div>
+                <span>Mweya Fruit Special</span>
+                <span>18%</span>   
+            </div>
+            <div>
+                <span>Kalanoga Tilapia sticks</span>
+                <span>15%</span>   
+            </div>
+            <div>
+                <span>Others</span>
+                <span>32%</span>   
+            </div>
+
+        </div>
+
+    </div>
+</section>
+						
+
+{% endblock %}

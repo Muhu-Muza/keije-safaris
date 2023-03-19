@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+        {% block sect %}
+	       <section class="sub-header">
+		{% endblock %}
+		
+		{% block head %}<h1>About Us</h1>{% endblock %}
+
+	
+{% block content %}
+	<!--- about us content---->
+	<section class="about-us">
+		<div class="row">
+			<div class="about-col">
+				<h1>We are East Africa's Leading Tours and Events managers</h1>
+				<p>Keije Safaris is a team of highly dedicated professionals who seek to
+					turn your dream into a sureal experience.<br>
+					From the best drivers, tour guides, chefs, to the best lounges and cafes the land has to offer.
+					Experience the vast beauty of the land close-up with the finest in the business.<br>
+					Holding Fifteen years of experience is Knowledge we boast of and wish to pass on to you.
+					Explore our page to find out more about us. <br>
+					
+					</p>
+					<a href="{{ url_for('services') }}" class="hero-btn red-btn">EXPLORE NOW</a>
+			</div>
+			<div class="about-col">
+				<img src="{{url_for('static', filename='images/pexels-quark-studio-2507007.jpg')}}" alt="">
+			</div>
+		</div>
+
+	
+	</section>
+										
+{% endblock %}
+	
