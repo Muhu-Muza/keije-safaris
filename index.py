@@ -7,23 +7,23 @@ def create_app():
 
     @app.route('/index')
     def index():
-        return render_template("index.html")
+        return render_template("index.html"), {'Content-Type': 'text/html'}
 
     @app.route('/about')
     def about():
-        return render_template("about.html")
+        return render_template("about.html"), {'Content-Type': 'text/html'}
 
     @app.route('/blog')
     def blog():
-        return render_template("blog.html")
+        return render_template("blog.html"), {'Content-Type': 'text/html'}
 
     @app.route('/contact')
     def contact():
-        return render_template("contact.html")
+        return render_template("contact.html"), {'Content-Type': 'text/html'}
 
     @app.route('/services')
     def services():
-        return render_template("services.html")
+        return render_template("services.html"), {'Content-Type': 'text/html'}
 
     return app
 
